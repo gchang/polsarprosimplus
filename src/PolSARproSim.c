@@ -28,6 +28,13 @@
  */
 #include	"PolSARproSim.h"
 
+/* global mutexes (declared extern in PolSARproSim.h) */
+pthread_mutex_t PolSARproSim_HHmutex;
+pthread_mutex_t PolSARproSim_HVmutex;
+pthread_mutex_t PolSARproSim_VVmutex;
+pthread_mutex_t PolSARproSim_MaxHgtmutex;
+pthread_mutex_t PolSARproSim_Statmutex;
+
 int main(int argc, char *argv[])
 {
    /**************************************/

@@ -98,7 +98,7 @@ typedef struct direct_ground_threadarg_tag{
    double                  *pRA;             /* pointer to randrom array */
 }Direct_Ground_Thread_Arg;
 
-pthread_mutex_t PolSARproSim_GNDmutex;
+extern pthread_mutex_t PolSARproSim_GNDmutex;
 
 #define	NO_POLSARPROSIM_DIRECTGROUND_ERRORS			0
 #define  DIRECT_GROUND_SMP_BLOCK_SIZE              30 /* the number of azimuth lines imaged by a single thread */

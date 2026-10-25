@@ -28,6 +28,9 @@
  */
 #include	"PolSARproSim_Short_Vegi.h"
 
+/* declared extern in PolSARproSim_Short_Vegi.h */
+pthread_mutex_t ShortVeg_mutex;
+
 
 void		*Image_Short_Veg_Direct_Stems		(void *threadarg)
 {

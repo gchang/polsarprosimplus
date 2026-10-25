@@ -178,7 +178,7 @@ typedef struct imgtree_threadarg_tag{
 
 
 /* Global counter for keeping track of the number of threads */
-int      PolSARproSim_Forest_Thread_Counter;
+extern int      PolSARproSim_Forest_Thread_Counter;
 
 #define  POLSARPROSIM_FOREST_MAXTHREADS      16
 

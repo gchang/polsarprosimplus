@@ -28,6 +28,9 @@
  */
 #include	"PolSARproSim_Direct_Ground.h"
 
+/* declared extern in PolSARproSim_Direct_Ground.h */
+pthread_mutex_t PolSARproSim_GNDmutex;
+
 /**********************************************************************/
 /* Direct ground interferometric SAR image calculation implementation */
 /**********************************************************************/

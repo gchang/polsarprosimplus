@@ -27,6 +27,9 @@
  * Notes       : Forest interferometric SAR image calculation for PolSARproSim
  */
 #include	"PolSARproSim_Forest.h"
+
+/* declared extern in PolSARproSim_Forest.h */
+int      PolSARproSim_Forest_Thread_Counter;
 #include  <time.h>
 /*************************/
 /* SAR geometry routines */
