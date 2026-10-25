@@ -14,6 +14,8 @@ inc = include_directories('../include')
 
 # Common Compiler Flags
 add_project_arguments('-DENABLE_THREADS', language : 'c')
+# erand48 and rand_r are POSIX, not ISO C11; glibc hides them under -std=c11
+add_project_arguments('-D_DEFAULT_SOURCE', language : 'c')
 
 # Source Lists
 pspsim_src = [
