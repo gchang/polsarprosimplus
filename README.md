@@ -20,6 +20,7 @@ The code can be compiled two ways, using `make` or the `meson` build system
         * `$ cd builddir`
         * `$ ninja` or `$ meson compile` will put binary in `builddir`, add it to your bash path
    * meson (https://mesonbuild.com/) and ninja are available on pip/conda etc.
+   * `environment.yml` lists a conda-forge build environment: `conda env create -f environment.yml`
 
 ### Compile using `make`
    * In `<dir>/src`: simply type 

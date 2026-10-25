@@ -1,0 +1,12 @@
+# Conda environment for building PolSARproSimPlus with meson (conda-forge only).
+# Checked on 2026-10-25: builds and runs the example with gcc 14.4 and with gcc 15.3 (meson 1.12, ninja 1.13, libxml2 2.15).
+name: polsarprosimplus
+channels:
+  - conda-forge
+dependencies:
+  - c-compiler
+  - meson
+  - ninja
+  - pkg-config     # meson finds libxml2 through pkg-config
+  - libxml2
+  - libxml2-devel  # libxml2 headers and libxml-2.0.pc
