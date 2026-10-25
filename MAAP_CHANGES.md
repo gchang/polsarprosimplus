@@ -26,6 +26,10 @@ The headers now declare them `extern`, and each is defined once: the five image 
 
 All 15 allocations of this form get one more byte. Nothing else changes, so results do not change; runs that crashed now finish.
 
+## 2026-10-25: environment.yml for the build
+
+The README names the build tools (meson, ninja) and libxml2 only in passing, so there was no single list to install from. `environment.yml` lists a conda-forge build environment: a C compiler, meson, ninja, pkg-config and libxml2 with its headers. It was checked by building from a clean clone and running the example with gcc 15.3 (the file's current resolution) as well as gcc 14.4: exit 0 in 6.9 min with 182 MB peak memory, ground sigma0 identical (HH -31.08, HV -87.30, VV -26.15 dB) and forest sigma0 within 0.03 dB of the earlier runs (HH +4.20, HV -5.61, VV +1.45 dB), inside the run-to-run spread described under Check. No code changes.
+
 ## Known issues left as they are
 
 These would change the simulation's output or statistics, so they are left for the authors to decide:
