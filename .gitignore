@@ -1,0 +1,22 @@
+# Mac OS X
+*.DS_Store
+
+# Vi stuff
+*.swp
+
+# Generate Stuff
+*.o
+
+# Binaries
+bin/pspsim_dev
+
+# Xcode stuff
+pspsim_dev.xcodeproj/
+xcuserdata/
+project.xcworkspace/
+project.pbxproj
+
+#cscope output
+cscope.out
+
+*/*.dSYM/
