@@ -6068,7 +6068,7 @@ void		Create_SAR_Filenames			(PolSARproSim_Record *pPR, int track)
    sprintf(trackid, "track%03d",track);
    
    sprintf(polname, "HH.bin");
-   pPR->HH_string	= (char*) calloc (strlen(pPR->pMasterDirectory)+strlen(pPR->pFilenamePrefix)+1+strlen(trackid)+1+strlen(polname), sizeof(char));
+   pPR->HH_string	= (char*) calloc (strlen(pPR->pMasterDirectory)+strlen(pPR->pFilenamePrefix)+1+strlen(trackid)+1+strlen(polname)+1, sizeof(char));
    strcpy (pPR->HH_string, pPR->pMasterDirectory);
    strncat(pPR->HH_string, pPR->pFilenamePrefix, strlen(pPR->pFilenamePrefix));
    strncat(pPR->HH_string, "_",1);
@@ -6077,7 +6077,7 @@ void		Create_SAR_Filenames			(PolSARproSim_Record *pPR, int track)
    strncat(pPR->HH_string, polname, strlen(polname));
    
    sprintf(polname, "HV.bin");
-   pPR->HV_string	= (char*) calloc (strlen(pPR->pMasterDirectory)+strlen(pPR->pFilenamePrefix)+1+strlen(trackid)+1+strlen(polname), sizeof(char));
+   pPR->HV_string	= (char*) calloc (strlen(pPR->pMasterDirectory)+strlen(pPR->pFilenamePrefix)+1+strlen(trackid)+1+strlen(polname)+1, sizeof(char));
    strcpy (pPR->HV_string, pPR->pMasterDirectory);
    strncat(pPR->HV_string, pPR->pFilenamePrefix, strlen(pPR->pFilenamePrefix));
    strncat(pPR->HV_string, "_",1);
@@ -6086,7 +6086,7 @@ void		Create_SAR_Filenames			(PolSARproSim_Record *pPR, int track)
    strncat(pPR->HV_string, polname, strlen(polname));
    
    sprintf(polname, "VH.bin");
-   pPR->VH_string	= (char*) calloc (strlen(pPR->pMasterDirectory)+strlen(pPR->pFilenamePrefix)+1+strlen(trackid)+1+strlen(polname), sizeof(char));
+   pPR->VH_string	= (char*) calloc (strlen(pPR->pMasterDirectory)+strlen(pPR->pFilenamePrefix)+1+strlen(trackid)+1+strlen(polname)+1, sizeof(char));
    strcpy (pPR->VH_string, pPR->pMasterDirectory);
    strncat(pPR->VH_string, pPR->pFilenamePrefix, strlen(pPR->pFilenamePrefix));
    strncat(pPR->VH_string, "_",1);
@@ -6095,7 +6095,7 @@ void		Create_SAR_Filenames			(PolSARproSim_Record *pPR, int track)
    strncat(pPR->VH_string, polname, strlen(polname));
    
    sprintf(polname, "VV.bin");
-   pPR->VV_string	= (char*) calloc (strlen(pPR->pMasterDirectory)+strlen(pPR->pFilenamePrefix)+1+strlen(trackid)+1+strlen(polname), sizeof(char));
+   pPR->VV_string	= (char*) calloc (strlen(pPR->pMasterDirectory)+strlen(pPR->pFilenamePrefix)+1+strlen(trackid)+1+strlen(polname)+1, sizeof(char));
    strcpy (pPR->VV_string, pPR->pMasterDirectory);
    strncat(pPR->VV_string, pPR->pFilenamePrefix, strlen(pPR->pFilenamePrefix));
    strncat(pPR->VV_string, "_",1);
@@ -6107,7 +6107,7 @@ void		Create_SAR_Filenames			(PolSARproSim_Record *pPR, int track)
    if(pPR->SSM_Flag == SSM_ENABLE){
       /* The GV+DG (ground scattering) files */
       sprintf(polname, "HHgnd.bin");
-      pPR->HHgnd_string	= (char*) calloc (strlen(pPR->pMasterDirectory)+strlen(pPR->pFilenamePrefix)+1+strlen(trackid)+1+strlen(polname), sizeof(char));
+      pPR->HHgnd_string	= (char*) calloc (strlen(pPR->pMasterDirectory)+strlen(pPR->pFilenamePrefix)+1+strlen(trackid)+1+strlen(polname)+1, sizeof(char));
       strcpy (pPR->HHgnd_string, pPR->pMasterDirectory);
       strncat(pPR->HHgnd_string, pPR->pFilenamePrefix, strlen(pPR->pFilenamePrefix));
       strncat(pPR->HHgnd_string, "_",1);
@@ -6116,7 +6116,7 @@ void		Create_SAR_Filenames			(PolSARproSim_Record *pPR, int track)
       strncat(pPR->HHgnd_string, polname, strlen(polname));
       
       sprintf(polname, "HVgnd.bin");
-      pPR->HVgnd_string	= (char*) calloc (strlen(pPR->pMasterDirectory)+strlen(pPR->pFilenamePrefix)+1+strlen(trackid)+1+strlen(polname), sizeof(char));
+      pPR->HVgnd_string	= (char*) calloc (strlen(pPR->pMasterDirectory)+strlen(pPR->pFilenamePrefix)+1+strlen(trackid)+1+strlen(polname)+1, sizeof(char));
       strcpy (pPR->HVgnd_string, pPR->pMasterDirectory);
       strncat(pPR->HVgnd_string, pPR->pFilenamePrefix, strlen(pPR->pFilenamePrefix));
       strncat(pPR->HVgnd_string, "_",1);
@@ -6125,7 +6125,7 @@ void		Create_SAR_Filenames			(PolSARproSim_Record *pPR, int track)
       strncat(pPR->HVgnd_string, polname, strlen(polname));
       
       sprintf(polname, "VHgnd.bin");
-      pPR->VHgnd_string	= (char*) calloc (strlen(pPR->pMasterDirectory)+strlen(pPR->pFilenamePrefix)+1+strlen(trackid)+1+strlen(polname), sizeof(char));
+      pPR->VHgnd_string	= (char*) calloc (strlen(pPR->pMasterDirectory)+strlen(pPR->pFilenamePrefix)+1+strlen(trackid)+1+strlen(polname)+1, sizeof(char));
       strcpy (pPR->VHgnd_string, pPR->pMasterDirectory);
       strncat(pPR->VHgnd_string, pPR->pFilenamePrefix, strlen(pPR->pFilenamePrefix));
       strncat(pPR->VHgnd_string, "_",1);
@@ -6134,7 +6134,7 @@ void		Create_SAR_Filenames			(PolSARproSim_Record *pPR, int track)
       strncat(pPR->VHgnd_string, polname, strlen(polname));
       
       sprintf(polname, "VVgnd.bin");
-      pPR->VVgnd_string	= (char*) calloc (strlen(pPR->pMasterDirectory)+strlen(pPR->pFilenamePrefix)+1+strlen(trackid)+1+strlen(polname), sizeof(char));
+      pPR->VVgnd_string	= (char*) calloc (strlen(pPR->pMasterDirectory)+strlen(pPR->pFilenamePrefix)+1+strlen(trackid)+1+strlen(polname)+1, sizeof(char));
       strcpy (pPR->VVgnd_string, pPR->pMasterDirectory);
       strncat(pPR->VVgnd_string, pPR->pFilenamePrefix, strlen(pPR->pFilenamePrefix));
       strncat(pPR->VVgnd_string, "_",1);
@@ -6144,7 +6144,7 @@ void		Create_SAR_Filenames			(PolSARproSim_Record *pPR, int track)
       
       /* for DV (volume scattering) files */
       sprintf(polname, "HHvol.bin");
-      pPR->HHvol_string	= (char*) calloc (strlen(pPR->pMasterDirectory)+strlen(pPR->pFilenamePrefix)+1+strlen(trackid)+1+strlen(polname), sizeof(char));
+      pPR->HHvol_string	= (char*) calloc (strlen(pPR->pMasterDirectory)+strlen(pPR->pFilenamePrefix)+1+strlen(trackid)+1+strlen(polname)+1, sizeof(char));
       strcpy (pPR->HHvol_string, pPR->pMasterDirectory);
       strncat(pPR->HHvol_string, pPR->pFilenamePrefix, strlen(pPR->pFilenamePrefix));
       strncat(pPR->HHvol_string, "_",1);
@@ -6153,7 +6153,7 @@ void		Create_SAR_Filenames			(PolSARproSim_Record *pPR, int track)
       strncat(pPR->HHvol_string, polname, strlen(polname));
       
       sprintf(polname, "HVvol.bin");
-      pPR->HVvol_string	= (char*) calloc (strlen(pPR->pMasterDirectory)+strlen(pPR->pFilenamePrefix)+1+strlen(trackid)+1+strlen(polname), sizeof(char));
+      pPR->HVvol_string	= (char*) calloc (strlen(pPR->pMasterDirectory)+strlen(pPR->pFilenamePrefix)+1+strlen(trackid)+1+strlen(polname)+1, sizeof(char));
       strcpy (pPR->HVvol_string, pPR->pMasterDirectory);
       strncat(pPR->HVvol_string, pPR->pFilenamePrefix, strlen(pPR->pFilenamePrefix));
       strncat(pPR->HVvol_string, "_",1);
@@ -6162,7 +6162,7 @@ void		Create_SAR_Filenames			(PolSARproSim_Record *pPR, int track)
       strncat(pPR->HVvol_string, polname, strlen(polname));
       
       sprintf(polname, "VHvol.bin");
-      pPR->VHvol_string	= (char*) calloc (strlen(pPR->pMasterDirectory)+strlen(pPR->pFilenamePrefix)+1+strlen(trackid)+1+strlen(polname), sizeof(char));
+      pPR->VHvol_string	= (char*) calloc (strlen(pPR->pMasterDirectory)+strlen(pPR->pFilenamePrefix)+1+strlen(trackid)+1+strlen(polname)+1, sizeof(char));
       strcpy (pPR->VHvol_string, pPR->pMasterDirectory);
       strncat(pPR->VHvol_string, pPR->pFilenamePrefix, strlen(pPR->pFilenamePrefix));
       strncat(pPR->VHvol_string, "_",1);
@@ -6171,7 +6171,7 @@ void		Create_SAR_Filenames			(PolSARproSim_Record *pPR, int track)
       strncat(pPR->VHvol_string, polname, strlen(polname));
       
       sprintf(polname, "VVvol.bin");
-      pPR->VVvol_string	= (char*) calloc (strlen(pPR->pMasterDirectory)+strlen(pPR->pFilenamePrefix)+1+strlen(trackid)+1+strlen(polname), sizeof(char));
+      pPR->VVvol_string	= (char*) calloc (strlen(pPR->pMasterDirectory)+strlen(pPR->pFilenamePrefix)+1+strlen(trackid)+1+strlen(polname)+1, sizeof(char));
       strcpy (pPR->VVvol_string, pPR->pMasterDirectory);
       strncat(pPR->VVvol_string, pPR->pFilenamePrefix, strlen(pPR->pFilenamePrefix));
       strncat(pPR->VVvol_string, "_",1);

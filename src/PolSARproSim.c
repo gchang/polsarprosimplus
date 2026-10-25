@@ -78,11 +78,11 @@ int main(int argc, char *argv[])
       /*****************************/
       /* Read in command line args */
       /*****************************/
-      input_string            = (char*) calloc (strlen(argv[1]), sizeof(char));
+      input_string            = (char*) calloc (strlen(argv[1])+1, sizeof(char));
       sscanf(argv[1],"%s", input_string);   
-      prefix                  = (char*) calloc (strlen(argv[2]), sizeof(char));
+      prefix                  = (char*) calloc (strlen(argv[2])+1, sizeof(char));
       sscanf(argv[2],"%s",prefix);   
-      passed_master_directory = (char*) calloc (strlen(argv[3]), sizeof(char));
+      passed_master_directory = (char*) calloc (strlen(argv[3])+1, sizeof(char));
       sscanf(argv[3],"%s",passed_master_directory);   
    }
    
